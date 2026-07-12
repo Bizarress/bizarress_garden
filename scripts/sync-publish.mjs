@@ -198,7 +198,7 @@ async function main() {
       .sort()
       .map((p) => `- [[${p.replace(/\.md$/, "")}]]`)
       .join("\n")
-    const fallback = `---\ntitle: Bizarress Garden\n---\n\n${links || "(まだ公開ノートがありません)"}\n`
+    const fallback = `---\ntitle: Bizarress Garden\npublish: true\n---\n\n${links || "(まだ公開ノートがありません)"}\n`
     await fs.writeFile(path.join(CONTENT_DIR, "index.md"), fallback, "utf8")
   }
 

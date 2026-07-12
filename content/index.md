@@ -1,5 +1,6 @@
 ---
 title: Bizarress Garden
+publish: true
 ---
 
-(まだ公開ノートがありません)
+- [[99_publish-test/_publish-test]]
